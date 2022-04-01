@@ -25,7 +25,11 @@ module.exports = {
         // font-family: 'Barlow', sans-serif;
         // font-family: 'Barlow Condensed', sans-serif;
         'Barlow': ['Barlow', 'sans-serif'],
-        'Barlow-Condensed': ['Barlow-Condensed', 'sans'],
+        'Barlow-Condensed': ['Barlow Condensed', 'sans'],
+      },
+
+      backgroundImage: {
+        'image-ilustration-devices': "url('../images/illustration-devices.svg')",
       },
     },
   },

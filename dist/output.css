@@ -468,16 +468,135 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.relative {
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+.min-h-\[250px\] {
+  min-height: 250px;
+}
+
+.min-w-\[375px\] {
+  min-width: 375px;
+}
+
+.scale-50 {
+  --tw-scale-x: .5;
+  --tw-scale-y: .5;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.bg-slate-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
+.bg-Very-Dark-Blue {
+  --tw-bg-opacity: 1;
+  background-color: hsl(230 29% 20% / var(--tw-bg-opacity));
+}
+
+.bg-Red {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 100% 68% / var(--tw-bg-opacity));
+}
+
+.bg-image-ilustration-devices {
+  background-image: url('../images/illustration-devices.svg');
+}
+
+.bg-\[length\:120\%\] {
+  background-size: 120%;
+}
+
+.bg-left {
+  background-position: left;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.font-Barlow {
+  font-family: Barlow, sans-serif;
+}
+
+.font-Barlow-Condensed {
+  font-family: Barlow Condensed, sans;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
   font-weight: 700;
 }
 
-.underline {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-Light-Grayish-Blue {
+  --tw-text-opacity: 1;
+  color: hsl(207 33% 95% / var(--tw-text-opacity));
+}
+
+.text-Grayish-Blue {
+  --tw-text-opacity: 1;
+  color: hsl(231 7% 65% / var(--tw-text-opacity));
+}
+
+.text-Very-Dark-Blue {
+  --tw-text-opacity: 1;
+  color: hsl(230 29% 20% / var(--tw-text-opacity));
+}
+
+.text-Dark-Grayish-Blue {
+  --tw-text-opacity: 1;
+  color: hsl(230 11% 40% / var(--tw-text-opacity));
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
