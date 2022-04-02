@@ -8,16 +8,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
   <link href="./dist/output.css" rel="stylesheet">
 </head>
-<body>
-  <nav class="flex items-center justify-between">
+<body class="min-h-[100vh]">
+  <nav class="relative flex items-center justify-between mx-8 mt-8">
     <div>
       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><g fill="#323334" fill-rule="evenodd"><path d="M0 32V.241h23.041zM31.15 32V.241h-4.411L17.48 13.158zM3.645 32l11.854-15.879L27.353 32z"/></g></svg>
     </div>
     <div>
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16"><g fill="#242942" fill-rule="evenodd"><path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z"/></g></svg>
     </div>
+    <div class="absolute h-72 w-80 bg-white top-10 shadow-2xl">
+      <ul class="h-full flex flex-col justify-evenly px-6">
+        <li class="uppercase text-center text-lg font-Barlow-Condensed font-bold text-Very-Dark-Blue">Product</li>
+        <li class="uppercase text-center text-lg font-Barlow-Condensed font-extrabold text-Very-Dark-Blue">Features</li>
+        <li class="uppercase text-center text-lg font-Barlow-Condensed font-extrabold text-Very-Dark-Blue">Pricing</li>
+        <li class="uppercase text-center text-lg font-Barlow-Condensed font-extrabold text-Grayish-Blue pt-6 border-t-2">Login</li>
+      </ul>
+    </div>
   </nav>
-  <div class="min-w-[375px] min-h-[250px] bg-slate-500 bg-image-ilustration-devices bg-no-repeat bg-left bg-[length:120%] overflow-hidden">
+  <div class="min-w-[375px] min-h-[250px] bg-image-ilustration-devices bg-no-repeat bg-left bg-[length:120%] overflow-hidden my-7">
   </div>
   <!-- <div class="relative">
     <div class="relative">
@@ -26,17 +34,22 @@
       </div>
     </div>
   </div> -->
-  <hgroup>
-    <div class="flex items-center">
-      <p class="bg-Very-Dark-Blue text-Light-Grayish-Blue py-1 px-2 rounded-lg font-Barlow-Condensed uppercase">New</p>
-      <p class="text-Grayish-Blue font-Barlow-Condensed uppercase">Monograph dashboard</p>
+  <hgroup class="mx-8">
+    <div class="flex items-center gap-4 mb-2">
+      <p class="bg-Very-Dark-Blue text-Light-Grayish-Blue px-2 rounded-full font-Barlow-Condensed font-bold uppercase">New</p>
+      <p class="text-Grayish-Blue font-Barlow-Condensed uppercase tracking-[0.2em]">Monograph dashboard</p>
     </div>
-    <h1 class="text-3xl font-Barlow-Condensed font-bold  text-Very-Dark-Blue uppercase">Powerful insights into your team</h1>
-    <h3 class="text-lg text-Dark-Grayish-Blue font-Barlow">Project planning and time tracking for agile teams</h3>
+    <h1 class="text-4xl font-Barlow-Condensed font-bold  text-Very-Dark-Blue uppercase mb-3">Powerful insights into your team</h1>
+    <h3 class="text-xl text-Dark-Grayish-Blue font-Barlow mb-3">Project planning and time tracking for agile teams</h3>
   </hgroup>
-  <footer class="flex items-center">
-    <button class="bg-Red text-Light-Grayish-Blue font-Barlow">Schedule a demo</button>
-    <button class="text-Grayish-Blue font-Barlow-Condensed">To see a preview</button>
+  <footer class="flex items-center gap-2 mx-8 mb-8">
+    <button class="bg-Red text-Light-Grayish-Blue font-Barlow-Condensed font-bold text-sm px-6 py-2 rounded-lg uppercase">Schedule a demo</button>
+    <button class="text-Grayish-Blue font-Barlow-Condensed px-6 py-2 rounded-lg uppercase tracking-wider">To see a preview</button>
   </footer>
+  <!-- <label>
+    <input type="checkbox"  class=" peer" />
+    <div class="peer-checked:bg-red-600">option1</div>
+    <div class="peer-checked:bg-blue-600">option2</div>
+  </label> -->
 </body>
 </html>
