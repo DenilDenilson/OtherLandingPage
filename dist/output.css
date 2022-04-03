@@ -468,10 +468,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
-.invisible {
-  visibility: hidden;
-}
-
 .absolute {
   position: absolute;
 }
@@ -480,24 +476,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
-.top-10 {
-  top: 2.5rem;
-}
-
-.left-20 {
-  left: 5rem;
-}
-
 .top-0 {
   top: 0px;
 }
 
-.right-0 {
-  right: 0px;
-}
-
 .right-20 {
   right: 5rem;
+}
+
+.top-10 {
+  top: 2.5rem;
+}
+
+.right-10 {
+  right: 2.5rem;
+}
+
+.right-1 {
+  right: 0.25rem;
 }
 
 .mx-8 {
@@ -534,16 +530,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.h-72 {
-  height: 18rem;
+.h-0 {
+  height: 0px;
 }
 
 .h-full {
   height: 100%;
-}
-
-.h-0 {
-  height: 0px;
 }
 
 .min-h-\[100vh\] {
@@ -556,10 +548,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-80 {
   width: 20rem;
-}
-
-.w-60 {
-  width: 15rem;
 }
 
 .w-\[30rem\] {
@@ -578,6 +566,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.select-none {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .flex-row {
@@ -622,10 +621,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .border-t-2 {
   border-top-width: 2px;
-}
-
-.border-l-2 {
-  border-left-width: 2px;
 }
 
 .bg-white {
@@ -699,6 +694,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -712,11 +712,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .font-bold {
@@ -769,16 +764,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.hover\:bg-opacity-50:hover {
+  --tw-bg-opacity: 0.5;
+}
+
+.hover\:underline:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
 .peer:checked ~ .peer-checked\:block {
   display: block;
-}
-
-.peer:checked ~ .peer-checked\:hidden {
-  display: none;
-}
-
-.peer:checked ~ .peer-checked\:h-0 {
-  height: 0px;
 }
 
 .peer:checked ~ .peer-checked\:h-72 {
@@ -796,20 +792,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1280px) {
-  .xl\:visible {
-    visibility: visible;
-  }
-
   .xl\:col-span-1 {
     grid-column: span 1 / span 1;
   }
 
-  .xl\:col-start-1 {
-    grid-column-start: 1;
-  }
-
   .xl\:col-start-2 {
     grid-column-start: 2;
+  }
+
+  .xl\:col-start-1 {
+    grid-column-start: 1;
   }
 
   .xl\:row-span-1 {
@@ -820,8 +812,9 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-row-start: 1;
   }
 
-  .xl\:block {
-    display: block;
+  .xl\:my-10 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
   }
 
   .xl\:flex {
@@ -840,15 +833,26 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .xl\:grid-rows-1 {
-    grid-template-rows: repeat(1, minmax(0, 1fr));
-  }
-
-  .xl\:grid-rows-\[400px\] {
-    grid-template-rows: 400px;
-  }
-
   .xl\:grid-rows-\[800px\] {
     grid-template-rows: 800px;
+  }
+
+  .xl\:self-center {
+    align-self: center;
+  }
+
+  .xl\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
